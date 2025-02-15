@@ -59,6 +59,7 @@ h1 {
 .card {
   padding: 32px !important;
   border-radius: 20px;
+  border: 2px solid !important;
   border-color: #b6c67d !important;
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(10px);
@@ -108,7 +109,18 @@ h1 {
   border: 2px solid #b6a785;
 }
 
+.cursor-pointer{
+  cursor: pointer;
+}
+
 /* media */
+
+@media screen and (max-width: 1200px) {
+  span{
+    font-size: 22px;
+  }
+}
+
 
 @media screen and (max-width: 900px) {
   h1 {
@@ -163,5 +175,22 @@ h1 {
 
   span {
     font-size: 18px;
+  }
+}
+
+
+
+@media screen and (max-height:590px) {
+  body {
+    padding-top: 60px;
+    transition: .3s all;
+    overflow: scroll;
+  }
+
+  img.fxd{
+    
+  }
+  body::-webkit-scrollbar{
+    display: none;
   }
 }
